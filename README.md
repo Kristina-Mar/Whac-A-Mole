@@ -1,1 +1,1 @@
-# Whac-A-Mole
+# Whac-A-Mole game with numbers. The player tries to match as many numbers from 0 to 9 that appear in the console as possible within the set lime limit.
