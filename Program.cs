@@ -29,6 +29,10 @@
                 {
                     numberOfHits ++;
                 }
+                else
+                {
+                    Console.Beep(1000, 400); // The console beeps if the player's number doesn't match. Beep shorter than 400 ms cannot be heard through (my) external speakers.
+                }
                 numberOfGuesses++;
             }
             Console.Clear();
