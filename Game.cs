@@ -28,7 +28,7 @@ namespace Whac_A_Mole
             while (true)
             {
                 mole.MoleShow(); // a number to be matched appears in the console
-                player.Whac(Console.ReadKey().KeyChar.ToString()); // The player doesn't have to press Enter, the line gets read after pressing one key.
+                player.Whac(); // player tries to match the number
                 timeElapsedTimeSpan = DateTime.Now - StartTime; // Logs the time of the player pressing the key and compares it to the time when the game started.
                 timeElapsedInSeconds = timeElapsedTimeSpan.TotalSeconds;
                 if (timeElapsedInSeconds > TimeLimit)

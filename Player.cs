@@ -9,8 +9,9 @@ namespace Whac_A_Mole
     internal class Player
     {
         public int WhacNumber; // the number the player writes
-        public int Whac(string whac) // fun fact, the correct spelling is actually Whac-A-Mole :)
+        public int Whac() // fun fact, the correct spelling is actually Whac-A-Mole :)
         {
+            string whac = Console.ReadKey().KeyChar.ToString(); // The player doesn't have to press Enter, the line gets read after pressing one key.
             if (int.TryParse(whac, out int whacNumber))
             {
                 return WhacNumber = whacNumber;
